@@ -6,7 +6,7 @@ type CartItemsProps = {
 };
 
 export const CartItems = ({ products }: CartItemsProps) => (
-  <ul className="-my-6 divide-y divide-gray-200">
+  <ul className="-my-5 divide-y divide-gray-200">
     {products.map((product) => (
       <CartItem key={product.id} {...product} />
     ))}
